@@ -1,0 +1,200 @@
+/* BANNER */
+.secao-banner {
+  background-image: url("/assets/recepcao.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+
+  position: relative;
+}
+
+.secao-banner::before {
+  content: "";
+  width: 100%;
+  height: 500px;
+  background: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.titulo-banner {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.subtitulo-banner {
+  font-weight: normal;
+  color: #ffff;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: #fff 1px 1px;
+  margin-bottom: 10px;
+}
+
+/* SOBRE NÓS */
+
+.container-servicos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-servicos h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.lista-servicos li {
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+/* SEÇÃO ESPECIALIDADES */
+.conteudo-especialidades {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.container-especialidades {
+  display: flex;
+  gap: 20px;
+}
+
+.card-especialidade {
+  width: calc(100% / 3);
+  box-shadow: 0 0 5px 0.5px #aeaeae;
+  border-radius: 5px;
+}
+
+.card-especialidade figure img {
+  width: 100%;
+}
+
+.legenda-card-especialidade {
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.listar-horarios {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 5px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  border-radius: 3px;
+  width: 150px;
+  color: #fff;
+}
+
+.listar-horarios:link,
+.listar-horarios:visited {
+  background-color: #0d6e71;
+}
+
+.listar-horarios:hover,
+.listar-horarios:active {
+  color: #303030;
+  background-color: #00cad1;
+}
+
+/* CONTATO */
+.destaques-sobre-funcionamento {
+  font-weight: 700;
+}
+
+.mapa {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+}
+
+/*---------- RECURSOS DE RESPONSIVIDADE ----------*/
+
+/* Celulares */
+@media (max-width: 425px) {
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+
+  .titulo-banner,
+  .subtitulo-banner {
+    font-size: 20px;
+  }
+  .secao-banner {
+    margin: 0 5px;
+  }
+  .container-servicos {
+    flex-direction: column;
+  }
+  .lista-servicos {
+    margin-left: 50px;
+  }
+
+  .conteudo-especialidades {
+    flex-direction: column;
+  }
+  .container-especialidades {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-especialidade {
+    width: 90%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 426px) and (max-width: 768px) {
+  .container-especialidades {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .card-especialidade {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitulo-banner {
+    font-size: 30px;
+  }
+  .descricao-secao {
+    padding: 0 20px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+  }
+  .menu {
+    border-top: solid 1px #aeaeae;
+    padding-top: 10px;
+  }
+  .container-especialidades {
+    padding: 0 20px;
+  }
+  .foto-medico {
+    display: none;
+  }
+  .paragrafos-rodape p {
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+}
+
+/* Computadores */
+@media (max-width: 1024px) {
+  /* o código anterior as medias queries já está configurado com max-width:1024px*/
+}

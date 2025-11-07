@@ -1,0 +1,98 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #0000008c;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+section {
+  scroll-margin-top: 100px; /* Margem para compensar o header */
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 10px 0;
+}
+.limitar-secao {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 30px;
+  text-align: center;
+}
+
+.descricao-secao {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* SECAO CABECALHO */
+.secao-cabecalho {
+  background-color: #00cad1;
+  min-height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  padding: 15px 0;
+}
+
+.cabecalho img {
+  width: 120px;
+  height: 60px;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu a {
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+.menu a:link,
+.menu a:visited {
+  color: #fff;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: #004b4c;
+}
+/*  ----------- 
+
+
+/* RODAPE */
+footer {
+  background-color: #0d6e71;
+  color: #fff;
+  padding: 30px;
+}
