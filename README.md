@@ -12,7 +12,7 @@ Em relação a largura de tela para foram considerados:
 
 # Tecnologias utilizadas
 * HTML5
-* CSS#
+* CSS3
 * Git e GitHub
 
   # Clique e acesse
